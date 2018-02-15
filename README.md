@@ -1,6 +1,6 @@
 # RL4AD - Reinforcement Learning for Anomaly Detection
 
-This gym environment simulates network intrusion similar to that described in the NSL-KDD Dataset described in this link http://www.unb.ca/cic/datasets/nsl.html
+This needs to be used in combination with gym-network_intrusion library
 
 # installation
 First install gym from OpenAI using the following steps
