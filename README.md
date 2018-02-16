@@ -3,7 +3,8 @@
 This needs to be used in combination with gym-network_intrusion library
 
 # installation
-First install gym from OpenAI using the following steps
+First install all the required python packages described in requirements.txt
+Then install gym from OpenAI using the following steps
 1. git clone https://github.com/openai/gym.git
 2. cd gym
 3. pip install -e .
