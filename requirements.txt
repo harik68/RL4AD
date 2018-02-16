@@ -1,0 +1,7 @@
+numpy>=1.10.4
+requests>=2.0
+six
+pyglet>=1.2.0
+scipy==0.17.1
+tensorflow==1.4.1
+scikit-learn==0.18.1
