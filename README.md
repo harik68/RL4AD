@@ -3,25 +3,23 @@
 This needs to be used in combination with gym-network_intrusion library
 
 # installation
-First install all the required python packages described in requirements.txt
-Then install gym from OpenAI using the following steps
+# Step 1: Install all the required python packages described in requirements.txt
+
+# Step 2: Install gym from OpenAI using the following steps
 1. git clone https://github.com/openai/gym.git
 2. cd gym
 3. pip install -e .
 
-After this install gym-network_intrusion using the following staps
+# Step 3: Install gym-network_intrusion using the following steps
 1. git clone https://github.com/harik68/gym-network_intrusion.git
 2. cd gym-network_intrusion
 3. pip install -e .
 
-# usage in your program
-1. First create a directory named datasets in your folder containing the main programme
-2. Copy the following file into this directory
+# Step 4: Install RL4AD using the following steps
+1. git clone https://github.com/harik68/RL4AD.git
+2. Copy the following file into the directory datasets
    https://www.dropbox.com/s/e2n5ow6b117ub80/kdd_nsl_train_onehot_string.pkl?dl=0
 3. In your code create an instance of gym_network_intrusion environment using the following commands
-import gym
-import gym_network_intrusion
-env = gym.make('network-intrusion-v0')
+4. Run the code NSL_KDD_DNN_QLearning.py
 
-After this you can use the Jupyter Notebook NSL_KDD_DNN_QLearning.ipynb which contains the main programe for Anomaly Detection
-
+# Remember to clear tmp folder after each run
