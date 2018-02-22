@@ -26,4 +26,15 @@ Install RL4AD using the following steps
 3. In your code create an instance of gym_network_intrusion environment using the following commands
 4. Run the code NSL_KDD_DNN_QLearning.py
 
+# Running Configuration
+I have set default values of running configuration as follows
+n_iterations = 10 # number of training iterations
+n_max_steps = 100 # max steps per episode
+This is for testing the code. It should complete in about 10 minutes. However this will not produce good results
+
+You need to edit the code and use the following configuration to get better results once you finish the testing. 
+n_iterations = 250 # number of training iterations
+n_max_steps = 1000 # max steps per episode
+
+
 Remember to clear tmp folder after each run
