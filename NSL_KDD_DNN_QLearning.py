@@ -86,7 +86,7 @@ discount_rate = 0.95
 
 # Executing the graph
 t_start = time.time()
-with tf.Session() as sess:
+with tf.Session(config=tf.ConfigProto(log_device_placement=True)) as sess:
     init.run()
     for iteration in range(n_iterations):
         all_rewards = [] # all sequences of raw rewards for each episode
