@@ -120,8 +120,6 @@ with tf.Session() as sess:
                 # save_path = saver.save(sess, '/Users/harikoduvely/Projects/RL/DataSets/NSL_KDD_CKPT/nsl_kdd_qlearning_4.ckpt')
                 save_path = saver.save(sess, 'tmp/nsl_kdd_qlearning_1.ckpt')
 
-t_end = time.time()
-print("Traning Time: " + str(t_end - t_start) + "Secs")
 
 # Evaluation of the results
 n_max_steps = 1000
@@ -203,12 +201,20 @@ df_in = df_pred.drop(['action','obs'], axis=1)
 
 df_lam = generate_roc(df_in)
 
+# Saving the ROC result into a file
+
+df_lam.to_pickle('results/kdd_nsl_train_roc_curve.pkl')
+
+"""
+Use this if your device support ploat (not on aws)
 plt.plot(df_lam['FPR'],df_lam['Recall'])
 
 plt.savefig('results/roc.png')
+"""
 
 
-# In[ ]:
-
+t_end = time.time()
+t_min = (t_end - t_start)/60 
+print("Total Time Taken: " + str(t_min) + " Secs")
 
 
